@@ -1,0 +1,417 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font-fam: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-fam);
+}
+
+button {
+  font-family: var(--font-fam);
+  font-size: 0.8rem;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.8rem;
+  padding-inline: 2.5rem;
+  font-size: 0.8rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.header h3 {
+  padding-inline: 1rem;
+  padding-block: 0.3rem;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+.header h3:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.header-products-list {
+  display: flex;
+  padding-left: 4rem;
+}
+
+.nav-list {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  width: 7rem;
+  height: 0.8rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.model-s {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+}
+
+.model-s > * {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.model-s-pic {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.model-y {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+}
+
+.model-y > * {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.model-y-pic {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.model-x {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+}
+
+.model-x > * {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.model-x-pic {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.model-3 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+}
+
+.model-3 > * {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.model-3-pic {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.solar {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+}
+
+.solar > * {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.solar-pic {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.accessories {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+}
+
+.accessories > * {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.accessories-pic {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#accessory {
+  background-color: black;
+}
+
+.arrow {
+  width: 2rem;
+
+  animation: jiggle 1s linear alternate infinite;
+}
+
+.arrow-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 49%;
+  bottom: 1%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.arrow-container:hover {
+  cursor: pointer;
+}
+
+.menu-btn {
+  border: none;
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.text-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 19%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.text-container h1 {
+  font-size: 2.5rem;
+}
+
+.button-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 8%;
+  display: flex;
+  gap: 1.5rem;
+  white-space: nowrap;
+}
+
+.custom-order {
+  border-radius: 5px;
+  border: none;
+  padding-inline: 6rem;
+  padding-block: 0.6rem;
+  background-color: rgba(23, 26, 32, 0.8);
+  color: white;
+}
+
+.custom-order:hover {
+  cursor: pointer;
+}
+
+.existing-inventory {
+  border-radius: 5px;
+  border: none;
+  padding-inline: 6rem;
+  padding-block: 0.6rem;
+  background-color: rgba(244, 244, 244, 0.65);
+  color: black;
+}
+
+.existing-inventory:hover {
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(150, 150, 150, 0.5);
+  z-index: 2;
+  display: flex;
+  animation: backdropFadeIn 0.3s linear alternate;
+}
+
+.left {
+  width: 100%;
+}
+.right {
+  width: 25.5rem;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.3s linear alternate;
+}
+
+.close-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.close {
+  transition: 0.4s ease-in-out;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-size: 0.8rem;
+  overflow: auto;
+  padding-left: 1rem;
+}
+
+.menu-list li {
+  padding-block: 0.5rem;
+  padding-left: 0.5rem;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+.menu-list li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.menu-products-list {
+  display: none;
+  width: 100%;
+  gap: 0.1rem;
+}
+
+.nav-list-burger {
+  display: flex;
+}
+
+span {
+  border-bottom: solid black 1px;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(30%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes backdropFadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding-inline: 1.5rem;
+    padding-block: 0.3rem;
+  }
+
+  .nav-list-burger {
+    display: none;
+  }
+
+  .menu-products-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-list li {
+    width: 90%;
+  }
+
+  .header-products {
+    display: none;
+  }
+
+  .header h3 {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .header h3:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .right {
+    width: clamp(20rem, 40rem, 41rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
