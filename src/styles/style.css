@@ -192,7 +192,6 @@ ul {
 
 .arrow {
   width: 2rem;
-
   animation: jiggle 1s linear alternate infinite;
 }
 
@@ -202,6 +201,7 @@ ul {
   left: 49%;
   bottom: 1%;
   background-color: rgba(0, 0, 0, 0);
+  animation: textMove 2.3s linear alternate;
 }
 
 .arrow-container:hover {
@@ -224,6 +224,11 @@ ul {
 
 .text-container h1 {
   font-size: 2.5rem;
+  animation: textMove 1s, textMoveIn 1s linear alternate;
+}
+
+.text-container p {
+  animation: textMove 1.5s, textMoveIn 1.5s linear alternate;
 }
 
 .button-container {
@@ -243,6 +248,7 @@ ul {
   padding-block: 0.6rem;
   background-color: rgba(23, 26, 32, 0.8);
   color: white;
+  animation: customMove 1.5s, textMove 1.5s linear alternate;
 }
 
 .custom-order:hover {
@@ -256,6 +262,7 @@ ul {
   padding-block: 0.6rem;
   background-color: rgba(244, 244, 244, 0.65);
   color: black;
+  animation: inventMove 1.5s, textMove 1.5s linear alternate;
 }
 
 .existing-inventory:hover {
@@ -339,6 +346,50 @@ ul {
 
 span {
   border-bottom: solid black 1px;
+}
+
+@keyframes textMove {
+  0% {
+    opacity: 0%;
+  }
+
+  70% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes textMoveIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes customMove {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes inventMove {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes jiggle {
