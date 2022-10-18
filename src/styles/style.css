@@ -465,4 +465,16 @@ span {
     flex-direction: column;
     width: 90%;
   }
+
+  .custom-order {
+    padding-inline: 4rem;
+  }
+
+  .existing-inventory {
+    padding-inline: 4rem;
+  }
+
+  #solar {
+    white-space: normal;
+  }
 }

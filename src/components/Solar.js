@@ -5,7 +5,7 @@ const Solar = () => {
     <section className="solar">
       <img className="solar-pic" src={solar} alt="solar" />
       <div className="text-container">
-        <h1>Solar and Powerwall</h1>
+        <h1 id="solar">Solar and Powerwall</h1>
         <p>Power Everything</p>
       </div>
       <div className="button-container">
