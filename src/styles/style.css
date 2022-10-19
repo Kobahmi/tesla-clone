@@ -28,6 +28,7 @@ section {
   height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  scroll-snap-type: block mandatory;
 }
 
 .header {
@@ -83,6 +84,7 @@ ul {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
+  scroll-snap-align: center;
 }
 
 .model-s > * {
@@ -101,6 +103,7 @@ ul {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
+  scroll-snap-align: center;
 }
 
 .model-y > * {
@@ -119,6 +122,7 @@ ul {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
+  scroll-snap-align: center;
 }
 
 .model-x > * {
@@ -137,6 +141,7 @@ ul {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
+  scroll-snap-align: center;
 }
 
 .model-3 > * {
@@ -155,6 +160,7 @@ ul {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
+  scroll-snap-align: center;
 }
 
 .solar > * {
@@ -173,6 +179,7 @@ ul {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
+  scroll-snap-align: center;
 }
 
 .accessories > * {
