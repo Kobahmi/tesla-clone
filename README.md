@@ -1,5 +1,8 @@
 Link to live preview: https://kobahmi.github.io/tesla-clone/
 
+![tesla](https://user-images.githubusercontent.com/100366174/197082027-88848f33-893b-4368-8ffc-b3f144c2845f.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
